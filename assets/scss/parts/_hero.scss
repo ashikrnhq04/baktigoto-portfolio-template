@@ -2,6 +2,7 @@
   height: 100vh;
   padding-top: 30px;
   overflow: hidden;
+  position: relative;
   .social-media {
     margin-top: 20px;
     a {
@@ -41,6 +42,10 @@
         @include transition(300);
       }
     }
+  }
+  .hero-content {
+    position: absolute;
+    bottom: 0;
   }
   .hero-title {
     font-size: 30px;
