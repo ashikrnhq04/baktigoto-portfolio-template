@@ -1,0 +1,27 @@
+{
+  "name": "bakigoto-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio HTML template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashikrnhq04/baktigoto-portfolio-template.git"
+  },
+  "keywords": [
+    "portfolio",
+    "sill",
+    "html-template"
+  ],
+  "author": "Ashik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashikrnhq04/baktigoto-portfolio-template/issues"
+  },
+  "homepage": "https://github.com/ashikrnhq04/baktigoto-portfolio-template#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
