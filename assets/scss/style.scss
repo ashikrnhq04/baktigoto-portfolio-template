@@ -1,0 +1,127 @@
+/*
+* sass variables
+*/
+
+/* fonts */
+$roboto: "Roboto Slab", serif;
+$raleway: "Raleway", sans-serif;
+
+/* colors */
+$yellow: #ffae00;
+$defaultColor: #36454b;
+
+/* mixins */
+@mixin border-radius($left: 10px, $right: 0, $rightbtm: 10px, $leftbtm: 0) {
+  border-radius: $left $right $rightbtm $leftbtm;
+  -webkit-border-radius: $left $right $rightbtm $leftbtm;
+  -moz-border-radius: $left $right $rightbtm $leftbtm;
+  -ms-border-radius: $left $right $rightbtm $leftbtm;
+  -o-border-radius: $left $right $rightbtm $leftbtm;
+}
+
+@mixin translateX($val) {
+  transform: translateX($val + px);
+  -webkit-transform: translateX($val + px);
+  -moz-transform: translateX($val + px);
+  -ms-transform: translateX($val + px);
+  -o-transform: translateX($val + px);
+}
+@mixin scale($val) {
+  transform: scale($val);
+  -webkit-transform: scale($val);
+  -moz-transform: scale($val);
+  -ms-transform: scale($val);
+  -o-transform: scale($val);
+}
+@mixin rotate($val) {
+  transform: rotate($val + deg);
+  -webkit-transform: rotate($val + deg);
+  -moz-transform: rotate($val + deg);
+  -ms-transform: rotate($val + deg);
+  -o-transform: rotate($val + deg);
+}
+@mixin rotateX($val) {
+  transform: rotateX($val + deg);
+  -webkit-transform: rotateX($val + deg);
+  -moz-transform: rotateX($val + deg);
+  -ms-transform: rotateX($val + deg);
+  -o-transform: rotateX($val + deg);
+}
+
+@mixin rotateY($val) {
+  transform: rotateY($val + deg);
+  -webkit-transform: rotateY($val + deg);
+  -moz-transform: rotateY($val + deg);
+  -ms-transform: rotateY($val + deg);
+  -o-transform: rotateY($val + deg);
+}
+@mixin transition($val) {
+  transition: all $val + ms;
+  -webkit-transition: all $val + ms;
+  -moz-transition: all $val + ms;
+  -ms-transition: all $val + ms;
+  -o-transition: all $val + ms;
+}
+
+body {
+  font: {
+    size: 14px;
+    family: $raleway;
+    weight: 400;
+  }
+  color: $defaultColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    family: $roboto;
+    weight: 700;
+  }
+}
+.section-title {
+  font-size: 35px;
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 1px;
+    width: 50%;
+    height: 2px;
+    background: $yellow;
+  }
+}
+.text--yellow {
+  color: $yellow !important;
+}
+.bg--yellow {
+  background: $yellow;
+}
+.btn {
+  @include border-radius(15px);
+  &.btn--yellow {
+    background: $yellow;
+  }
+}
+.btn[type="submit"] {
+  @include border-radius(0px, 0px, 0px, 0px);
+}
+.icon {
+  i {
+    padding: 20px;
+    @include border-radius();
+    background: $yellow;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+@import "./parts/main";

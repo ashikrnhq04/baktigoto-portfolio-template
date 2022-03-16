@@ -4,7 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!-- google fonts robot slab, raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto+Slab:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome v4 -->
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
     <!-- Bootstrap CSS -->
@@ -14,16 +20,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Hello, world!</title>
+    <title>Baktigoto PORTFOLIO html template</title>
   </head>
 
   <body>
     <!-- hero section -->
-    <section id="hero">
+    <section id="hero" class="bg-dark">
       <header class="container">
         <!-- topbar -->
-        <div class="topbar d-lg-block w-100">
+        <div class="topbar w-100">
           <div class="row">
             <div class="col-sm-4">
               <div id="logo"></div>
@@ -47,7 +55,7 @@
                     >
                   </li>
                 </ul>
-                <a href="#" area-label="Open" id="navopen">
+                <a href="#" area-label="Open" id="navopen" class="active">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
                 <a href="#" area-label="Close" id="navclose">
@@ -57,38 +65,45 @@
             </div>
           </div>
         </div>
+
         <!-- hero content -->
-        <div class="hero-content d-lg-block w-100">
+        <div class="hero-content w-100">
           <div class="row">
-            <div class="col-sm-6">
-              <img src="#" class="profile-image" alt="" />
+            <div class="col-md-5">
+              <img
+                src="./media/portfolio-image.png"
+                class="profile-image img-fluid"
+                alt=""
+              />
             </div>
-            <div class="col-sm-6">
-              <h1>
+            <div
+              class="col-md-7 align-self-center text-sm-center text-lg-start"
+            >
+              <h1 class="text-white here-title">
                 Hello, I'm
                 <span class="text--yellow text-uppercase">Jhone Doe</span>
               </h1>
-              <h4>
-                <span class="text--yellow">Front-end developer</span> based in
+              <h4 class="text-white hero-title">
+                <span class="text--yellow">Front-end developer</span> based on
                 <span class="text--yellow text-uppercase">Earth</span>
               </h4>
               <div class="social-media d-flex align-items-start">
-                <a href="#" area-label="Facebook"
+                <a href="#" title="facebook" area-label="Facebook"
                   ><i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-                <a href="#" area-label="Twitter"
+                <a href="#" title="twitter" area-label="Twitter"
                   ><i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="#" area-label="Linkedin"
+                <a href="#" title="linkedin" area-label="Linkedin"
                   ><i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="#" area-label="Instagram"
+                <a href="#" title="instagram" area-label="Instagram"
                   ><i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="#" area-label="Dribbble"
+                <a href="#" title="dribbble" area-label="Dribbble"
                   ><i class="fa fa-dribbble" aria-hidden="true"></i>
                 </a>
-                <a href="#" area-label="Behance"
+                <a href="#" title="behance" area-label="Behance"
                   ><i class="fa fa-behance" aria-hidden="true"></i>
                 </a>
               </div>
@@ -104,7 +119,7 @@
         <!-- container -->
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 text-center">
               <h2 class="section-title text-uppercase text--yellow">
                 about me
               </h2>
@@ -112,24 +127,51 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <article>
-                <h3 class="h3 text--yellow text-uppercase">
+              <article class="me-5">
+                <h3 class="text--yellow text-uppercase">
                   a little brif about me
                 </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Rerum excepturi cum maiores, ipsa autem iste expedita saepe
+                  reiciendis repellat voluptates ex accusantium commodi illo ad
+                  delectus reprehenderit veritatis ipsum eveniet.
+                </p>
+                <p>
+                  Et sint vero atque a veniam labore molestiae id rem veritatis
+                  laborum saepe corporis magnam, placeat, porro provident
+                  consequatur quam consectetur vel!
+                </p>
               </article>
             </div>
             <div class="col-sm-6">
               <h3 class="text--yellow text-uppercase">skills</h3>
               <div class="skills">
-                <h6>Adobe Photoshop</h6>
-                <h6>Adobe Illustrator</h6>
-                <h6>Html & Css</h6>
-                <h6>Web Design</h6>
-                <h6>UI/UX Design</h6>
+                <p>Adobe Photoshop</p>
+                <div class="indicator">
+                  <div class="line" data-skill="80"><span></span></div>
+                </div>
+                <p>Adobe Illustrator</p>
+                <div class="indicator w-100">
+                  <div class="line" data-skill="60"><span></span></div>
+                </div>
+                <p>Html & Css</p>
+                <div class="indicator w-100">
+                  <div class="line" data-skill="80"><span></span></div>
+                </div>
+                <p>Web Design</p>
+                <div class="indicator w-100">
+                  <div class="line" data-skill="70"><span></span></div>
+                </div>
+                <p>UI/UX Design</p>
+                <div class="indicator w-100">
+                  <div class="line" data-skill="90"><span></span></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="gy-5"></div>
         <!-- container end -->
         <div class="work-promise bg-dark">
           <!-- container -->
@@ -143,7 +185,7 @@
                     <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
                   </div>
                   <div class="text-center">
-                    <h3 class="text-uppercase">piexel perfect</h3>
+                    <h6 class="text-uppercase">piexel perfect</h6>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempora nemo, necessitatibus maiores cum voluptates fugiat
@@ -162,7 +204,7 @@
                     <i class="fa fa-desktop" aria-hidden="true"></i>
                   </div>
                   <div class="text-center">
-                    <h3 class="text-uppercase">piexel perfect</h3>
+                    <h6 class="text-uppercase">clean design</h6>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempora nemo, necessitatibus maiores cum voluptates fugiat
@@ -181,7 +223,7 @@
                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                   </div>
                   <div class="text-center">
-                    <h3 class="text-uppercase">piexel perfect</h3>
+                    <h6 class="text-uppercase">best analycis</h6>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempora nemo, necessitatibus maiores cum voluptates fugiat
@@ -197,15 +239,14 @@
           <!-- container end -->
         </div>
       </section>
-      <!-- working area -->
-      <section id="workingarea">
+
+      <!-- work area -->
+      <section id="workarea">
         <!-- container -->
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              <h2
-                class="section-heading text-center text-uppercase text--yellow"
-              >
+            <div class="col-sm-12 text-center">
+              <h2 class="section-title text-center text-uppercase text--yellow">
                 my working area
               </h2>
             </div>
@@ -213,11 +254,11 @@
           <div class="row">
             <div class="offset-lg-2 col-lg-8 col-sm-12">
               <article class="d-grid working-area-content">
-                <div class="bg--yellow text-center">
+                <div class="text-center content">
                   <div class="icon text-center">
                     <i class="fa fa-laptop" aria-hidden="true"></i>
                   </div>
-                  <h3 class="text-white text-uppercase">web template design</h3>
+                  <h3 class="text-uppercase">web template design</h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Incidunt suscipit, quos cum voluptatum dicta iure rem
@@ -225,11 +266,11 @@
                     repellendus, excepturi veniam fugit! Sit, soluta sapiente.
                   </p>
                 </div>
-                <div class="bg--yellow text-center">
+                <div class="text-center content">
                   <div class="icon text-center">
                     <i class="fa fa-mobile-phone" aria-hidden="true"></i>
                   </div>
-                  <h3 class="text-white text-uppercase">web template design</h3>
+                  <h3 class="text-uppercase">web template design</h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Incidunt suscipit, quos cum voluptatum dicta iure rem
@@ -237,11 +278,11 @@
                     repellendus, excepturi veniam fugit! Sit, soluta sapiente.
                   </p>
                 </div>
-                <div class="bg--yellow text-center">
+                <div class="text-center content">
                   <div class="icon text-center">
                     <i class="fa fa-ils" aria-hidden="true"></i>
                   </div>
-                  <h3 class="text-white text-uppercase">web template design</h3>
+                  <h3 class="text-uppercase">web template design</h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Incidunt suscipit, quos cum voluptatum dicta iure rem
@@ -249,11 +290,11 @@
                     repellendus, excepturi veniam fugit! Sit, soluta sapiente.
                   </p>
                 </div>
-                <div class="bg--yellow text-center">
+                <div class="text-center content">
                   <div class="icon text-center">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                   </div>
-                  <h3 class="text-white text-uppercase">web template design</h3>
+                  <h3 class="text-uppercase">web template design</h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Incidunt suscipit, quos cum voluptatum dicta iure rem
@@ -273,7 +314,7 @@
               <div class="col-sm-12 col-md-2">
                 <div class="text-center text-white">
                   <div class="icon"><i class="fa fa-github-alt"></i></div>
-                  <h6 class="text-uppercase">plan</h6>
+                  <p class="text-uppercase mt-2">plan</p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-2">
@@ -281,7 +322,7 @@
                   <div class="icon">
                     <i class="fa fa-skyatlas" aria-hidden="true"></i>
                   </div>
-                  <h6 class="text-uppercase">plan</h6>
+                  <p class="text-uppercase mt-2">idea</p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-2">
@@ -289,7 +330,7 @@
                   <div class="icon">
                     <i class="fa fa-pencil-square" aria-hidden="true"></i>
                   </div>
-                  <h6 class="text-uppercase">plan</h6>
+                  <p class="text-uppercase mt-2">sketch</p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-2">
@@ -297,7 +338,7 @@
                   <div class="icon">
                     <i class="fa fa-desktop" aria-hidden="true"></i>
                   </div>
-                  <h6 class="text-uppercase">plan</h6>
+                  <p class="text-uppercase mt-2">design</p>
                 </div>
               </div>
               <div class="col-sm-12 col-md-2">
@@ -305,7 +346,7 @@
                   <div class="icon">
                     <i class="fa fa-check" aria-hidden="true"></i>
                   </div>
-                  <h6 class="text-uppercase">plan</h6>
+                  <p class="text-uppercase mt-2">launch</p>
                 </div>
               </div>
             </div>
@@ -313,15 +354,14 @@
           <!-- container end -->
         </div>
       </section>
+
       <!-- portfolio section -->
       <section id="portfolio">
         <!-- container -->
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              <h2
-                class="section-heading text-center text--yellow text-uppercase"
-              >
+            <div class="col-sm-12 text-center">
+              <h2 class="section-title text-center text--yellow text-uppercase">
                 my portfolio
               </h2>
             </div>
@@ -334,45 +374,45 @@
           <div class="row">
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/web.jpg" alt="" />
+                <img src="./media/web.jpg" alt="" />
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/app.jpg" alt="" />
+                <img src="./media/app.jpg" alt="" />
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/landingpage.jpg" alt="" />
+                <img src="./media/landingpage.jpg" alt="" />
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/ecommerce.jpg" alt="" />
+                <img src="./media/ecommerce.jpg" alt="" />
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/mobile.jpg" alt="" />
+                <img src="./media/mobile.jpg" alt="" />
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
               <div class="portfolio-description">
-                <img class="img-fluid" src="./media/mockup.jpg" alt="" />
+                <img src="./media/mockup.jpg" alt="" />
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12 text-center">
               <p>Interested in more details? find me on Behance, Dribble</p>
-              <a href="#" class="btn btn--yellow text-uppercase text-white"
-                ><i class="fa fa-behance" area-hidden="true">behance</i>
+              <a href="#" class="btn btn--yellow text-uppercase text-white me-2"
+                ><i class="fa fa-behance" area-hidden="true"> behance</i>
               </a>
-              <a href="#" class="btn btn--yellow text-uppercase text-white"
-                ><i class="fa fa-dribble" area-hidden="true">dribble</i>
+              <a href="#" class="btn btn--yellow text-uppercase text-white ms-2"
+                ><i class="fa fa-dribbble" area-hidden="true"> dribble</i>
               </a>
             </div>
           </div>
@@ -383,37 +423,37 @@
             <div class="row">
               <div class="col-sm-12 col-lg-3">
                 <div class="text-center text-uppercase text-white">
-                  <div class="icon">
+                  <div class="icon mb-4">
                     <i area-hidden="true" class="fa fa-check-square"></i>
                   </div>
-                  <h4>192</h4>
+                  <h6>192</h6>
                   project completed
                 </div>
               </div>
               <div class="col-sm-12 col-lg-3">
                 <div class="text-center text-uppercase text-white">
-                  <div class="icon">
+                  <div class="icon mb-4">
                     <i area-hidden="true" class="fa fa-group"></i>
                   </div>
-                  <h4>118</h4>
+                  <h6>118</h6>
                   happy clients
                 </div>
               </div>
               <div class="col-sm-12 col-lg-3">
                 <div class="text-center text-uppercase text-white">
-                  <div class="icon">
+                  <div class="icon mb-4">
                     <i area-hidden="true" class="fa fa-coffee"></i>
                   </div>
-                  <h4>950</h4>
+                  <h6>950</h6>
                   cups of coffee
                 </div>
               </div>
               <div class="col-sm-12 col-lg-3">
                 <div class="text-center text-uppercase text-white">
-                  <div class="icon">
+                  <div class="icon mb-4">
                     <i area-hidden="true" class="fa fa-clock-o"></i>
                   </div>
-                  <h4>650</h4>
+                  <h6>650</h6>
                   hourse of work
                 </div>
               </div>
@@ -421,40 +461,33 @@
           </div>
         </div>
       </section>
-      <!-- feedback -->
-      <section id="feedback">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center text-uppercase">
-              <h2 class="section-title">clients feedback</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6"></div>
-            <div class="col-sm-12 col-lg-6"></div>
-          </div>
-        </div>
-      </section>
+
       <!-- contact -->
-      <section id="contact" class="bg-dark">
+      <section id="contact" class="bg-light">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center text-uppercase">
-              <h2 class="section-title">get in touch</h2>
+              <h2 class="section-title text--yellow">get in touch</h2>
             </div>
           </div>
           <div class="row">
             <form action="#">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="mb-3">
+                  <div class="mb-3 input-group">
+                    <span class="input-group-text bg--yellow text-white"
+                      ><i class="fa fa-user"></i
+                    ></span>
                     <input
                       type="text"
                       class="form-control"
                       placeholder="First name"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 input-group">
+                    <span class="input-group-text bg--yellow text-white"
+                      ><i class="fa fa-envelope"></i
+                    ></span>
                     <input
                       type="email"
                       class="form-control"
@@ -464,17 +497,16 @@
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <div class="mb-3 h-100">
-                    <textarea
-                      class="form-control h-100"
-                      name=""
-                      id=""
-                    ></textarea>
+                    <textarea class="form-control" name="" id=""></textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                  <div>
+                  <div class="input-group">
+                    <span class="input-group-text bg--yellow text-white"
+                      ><i class="fa fa-globe"></i
+                    ></span>
                     <input
                       type="text"
                       placeholder="Your website"
@@ -498,31 +530,26 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark">
+    <!-- main body content end -->
+
+    <!-- footer -->
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center text-white">
-            <p>&copy; 2020 | All rights reserved</p>
+            <p class="m-0">&copy; 2020 | All rights reserved</p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- main body content end -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
       -
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

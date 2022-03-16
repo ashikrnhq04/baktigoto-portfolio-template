@@ -1,0 +1,24 @@
+#contact {
+  @extend #about;
+  padding-bottom: 70px;
+  form {
+    .input-group {
+      @include border-radius(0px, 0px, 0px, 0px);
+    }
+    .input-group-text {
+      @extend .input-group;
+      border-color: $yellow;
+      width: 44px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    input {
+      @extend .input-group;
+    }
+    textarea {
+      @extend .input-group;
+      height: calc(100% - 15px);
+    }
+  }
+}

@@ -1,0 +1,54 @@
+#workarea {
+  @extend #about;
+  h3 {
+    padding: 0;
+    margin: 30px 0px 15px 0px;
+    font-size: 18px;
+    font-family: $raleway;
+    font-weight: 400;
+    &:after {
+      content: none;
+    }
+  }
+  .working-area-content {
+    grid-template-columns: 1fr 1fr;
+    .bg--yellow {
+      padding: 50px 20px;
+    }
+    .icon i {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgb(194, 194, 194);
+      background: none;
+      color: $yellow;
+      @include transition(300);
+    }
+    .content {
+      padding: 30px 15px;
+      @include transition(600);
+      &:hover {
+        background: $yellow;
+        color: $defaultColor;
+        h3,
+        p {
+          color: #fff;
+          @include transition(600);
+        }
+        @include transition(600);
+        .icon i {
+          background: #fff;
+          border-color: #fff;
+          @include transition(600);
+        }
+      }
+    }
+  }
+  .workprocess {
+    padding: 70px 0px;
+    margin-top: 70px;
+  }
+}
