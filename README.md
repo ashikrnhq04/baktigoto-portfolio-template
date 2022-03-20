@@ -4,7 +4,7 @@ Technologies: HTML, Bootstrap 5, FontAwesome, SASS
 
 Mobile Friendly: No
 
-Marktup Styel: Symantic
+Markup Styel: Symantic
 
 PSD Desgined by: https://dribbble.com/towkirbappy
 
