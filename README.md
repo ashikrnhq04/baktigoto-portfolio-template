@@ -4,6 +4,8 @@ Technologies: HTML, Bootstrap 5, FontAwesome, SASS
 
 Mobile Friendly: No
 
+Marktup Styel: Symantic
+
 PSD Desgined by: https://dribbble.com/towkirbappy
 
 This template is designed for personal portfolio purposes. Please don't use it for any business use. To know more about design or design-related queries, please contact https://dribbble.com/towkirbappy. 
