@@ -1,7 +1,8 @@
 # baktigoto-portfolio-template
 
 Technologies: HTML, Bootstrap 5, FontAwesome, SASS
-Mobile friendly: No
+
+Mobile Friendly: No
 
 PSD Desgined by: https://dribbble.com/towkirbappy
 
